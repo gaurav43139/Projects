@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.music-player{
+    background: #ffe0e5;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    /*position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+
+nav{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+nav .circle{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;  /*this is done to center the icons*/
+    background: #fff;
+    color: #f53192;
+    box-shadow: 0 5px 10px rgba(255,26,26,0.22);
+}
+
+.song-img{
+    width: 220px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 0 10px 60px rgba(255, 26 ,26 ,0.22);
+}
+
+.music-player h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.music-player p{
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#song-slider{
+    -webkit-appearance: none; /*this removes the default slider*/
+    height: 6px;
+    width: 100%;
+    background: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+
+}
+
+ #song-slider::-webkit-slider-thumb{ /*this is the thumb of the slider */
+    -webkit-appearance: none; /*this removes the default style*/
+    height: 30px;
+    width: 30px;
+    background: #f53192;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(255,26,26,0.22);
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div{
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: #f53192;
+    line-height: 60px; /* this is done to make the icons in center*/
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(255,26,26,0.22);
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #f53192;
+    color: #fff;
+}
