@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display SC", serif;
+}
+
+body{
+    background: #bbc6fa;
+}
+
+.quote-box{
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /*This technique is commonly used for centering because it doesn't require knowing the box's dimensions beforehand. */
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+    text-align: center;   
+}
+
+.quote-box h2{
+    font-size: 32px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-box h2::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background: rgb(23,124,229);
+}
+
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+    font-weight: 400;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content:'"'; 
+}
+
+.quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right; /*This will make the span appear on the right side of the blockquote. */
+    position: relative;
+}
+
+.quote-box span::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background: rgb(23,124,229);
+    top: 50%;
+    left: -30px;
+    font-size: 40px;
+    
+}   
+
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-box button{
+    background:rgb(23,124,229) ;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23,124,229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
