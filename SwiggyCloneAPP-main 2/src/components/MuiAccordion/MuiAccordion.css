@@ -1,0 +1,44 @@
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+    padding: 8px;
+    min-height: 187px;
+}
+
+.menu-item-image {
+    min-width: 156px;
+    height: 144px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.menu-item-image--wrapper {
+    position: relative;
+    margin-left: 48px;
+    width: 156px;
+}
+
+.menu-item-add-btn {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 120px;
+    height: 32px;
+    border-radius: 8px;
+    transform: translate(-50%, 25%);
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(27, 166, 114);
+    border: none;
+    line-height: 24px;
+    margin: 0;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.menu-item-add-btn:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}

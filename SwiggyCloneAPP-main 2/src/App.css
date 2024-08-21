@@ -1,0 +1,101 @@
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .header {
+    display: flex;
+    font-family: Bricolage Grotesque;
+    justify-content: space-between;
+    padding: 16px 24px;
+    align-items: center;
+    box-shadow: 0 0 4px #d0d0d0;
+  }
+  
+  .header-logo {
+    width: 120px;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    gap: 24px;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  
+  .nav-link {
+    cursor: pointer;
+    padding: 0 8px;
+  }
+  
+  .cards-container {
+    width: 80vw;
+    margin: 36px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+  }
+  
+  /* Restaurant Page */
+  
+  .restaurant-page-body {
+    font-family: poppins;
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 48px;
+  }
+  
+  .restaurant-details-wrapper {
+    background: linear-gradient(
+      rgb(255, 255, 255) -6.71%,
+      rgb(235, 235, 242) 56.19%,
+      rgb(223, 223, 231) 106.56%
+    );
+    padding: 0px 16px 16px;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    margin-bottom: 24px;
+  }
+  
+  .restaurant-details {
+    border-radius: 20px;
+    border: 1px solid rgba(2, 6, 12, 0.15);
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 8px 16px 0px;
+    padding: 16px;
+  }
+  
+  .menu-label {
+    margin-bottom: 24px;
+    text-align: center;
+    border: 1px solid rgb(235, 235, 242);
+    padding: 4px 0;
+    border-radius: 16px;
+  
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 6px 0px;
+  }
+  
+  /* Shimmer css */
+  
+  .Shimmer-Cards-Container {
+    width: 80vw;
+    margin: 36px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 48px;
+  }
+  
+  .Shimmer-Card {
+    width: 240px;
+    height: 260px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 4px #c0c0c0;
+    border-radius: 20px;
+  }
+  

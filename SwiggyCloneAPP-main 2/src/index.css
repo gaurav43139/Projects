@@ -1,0 +1,7 @@
+@import "./components/Card/Card.css";
+@import "./components/MuiAccordion/MuiAccordion.css";
+@import "./App.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

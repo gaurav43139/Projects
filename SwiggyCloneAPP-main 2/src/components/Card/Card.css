@@ -1,0 +1,84 @@
+.Card {
+    width: 254px;
+    font-family: Bricolage Grotesque;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.Card:hover {
+    transform:scale(0.98);
+}
+
+.restaurant-logo-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.restaurant-logo {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.offer-info-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%);
+    border-radius: 0 0 20px 20px
+}
+
+.offer-info {
+    margin: 8px;
+    margin-left: 12px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.restaurant-name {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.avg-rating, .avg-delhivery-time {
+    font-weight: 500;
+}
+
+.avg-rating::before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    margin-right: 4px;
+    display: inline-flex;
+    background-image: url('/src/assests/star.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.avg-rating::after {
+    content: " • ";
+}
+
+.cuisines, .restaurant-loc {
+    color: rgba(2, 6, 12, 0.6);
+    text-transform: capitalize;
+}
+
+.rest-details {
+    padding: 4px 12px;
+}
+
+.cuisines, .restaurant-name, .restaurant-loc, .offer-info {
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
